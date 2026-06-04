@@ -83,3 +83,11 @@ def test_can_parse(input_stream, is_profibus, is_modbus, is_generic_tcp_udp):
     assert profibus_result == is_profibus
     assert modbus_result == is_modbus
     assert generic_tcp_udp_result == is_generic_tcp_udp
+
+@pytest.mark.skip(reason="TBD: Test behaviour for UnicodeDecodeErrors.")
+def test_all_parser_decoding_error_handling():
+    pass
+
+@pytest.mark.skip(reason="TBD: Test behaviour for corrupted length bytes.")
+def test_profibus_parser_error_handling():
+    pass

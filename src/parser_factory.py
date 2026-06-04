@@ -16,3 +16,5 @@ class ParserFactory:
         for p in parsers:
             if  p.can_parse(stream):
                 return p
+                # Note: We could encapsulate the message parsing:
+                # return p.parse_message(stream)
